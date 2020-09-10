@@ -1,0 +1,22 @@
+{
+	"name": "project-starter",
+	"version": "1.0.0",
+	"description": "A Parcel project starter. Forked from Michelle Barker (mbarker84).",
+	"main": "index.html",
+	"scripts": {
+		"start": "parcel src/index.html -p 3000 --open",
+		"clean": "rm -rf dist/*",
+		"build:parcel": "parcel build src/index.html",
+		"build": "npm run clean && npm run build:parcel"
+	},
+	"author": "Blake Lam",
+	"license": "ISC",
+	"dependencies": {},
+	"devDependencies": {
+		"@babel/core": "^7.11.6",
+		"@babel/preset-env": "^7.11.5",
+		"node-sass": "^4.14.1",
+		"parcel-bundler": "^1.12.4",
+		"parcel-plugin-imagemin": "^4.0.1"
+	}
+}
