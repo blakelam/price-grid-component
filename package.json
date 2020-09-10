@@ -4,7 +4,7 @@
 	"description": "A Parcel project starter. Forked from Michelle Barker (mbarker84).",
 	"main": "index.html",
 	"scripts": {
-		"start": "parcel src/index.html -p 3000 --open",
+		"start": "parcel ./src/index.html -p 3000 --open",
 		"clean": "rm -rf dist/*",
 		"build:parcel": "parcel build src/index.html",
 		"build": "npm run clean && npm run build:parcel"
