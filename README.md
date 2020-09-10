@@ -1,27 +1,5 @@
-# Project Starter Template
+# A Frontend Mentor Challenge - Single Price Grid Component
 
-A starter repository based on Michelle Barker's (mbarker84) [tutorial series](https://css-irl/a-modern-front-end-workflow-part-1).
+![Design preview for the Single Price Grid Component coding challenge](./design/desktop-preview.jpg)
 
-## To install
-
-```
-npm install
-```
-
-or
-
-```
-yarn install
-```
-
-## To run
-
-```
-npm start
-```
-
-or
-
-```
-yarn start
-```
+[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
