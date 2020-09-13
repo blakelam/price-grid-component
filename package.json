@@ -1,7 +1,7 @@
 {
-	"name": "project-starter",
+	"name": "Price Grid Component",
 	"version": "1.0.0",
-	"description": "A Parcel project starter. Forked from Michelle Barker (mbarker84).",
+	"description": "A Frontend Mentor challenge",
 	"main": "index.html",
 	"scripts": {
 		"start": "parcel ./src/index.html -p 3000 --open",
