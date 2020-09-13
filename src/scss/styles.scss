@@ -1,0 +1,140 @@
+// Colors
+$cyan: hsl(179, 62%, 43%);
+$light-cyan: hsl(180, 46%, 52%);
+$bright-yellow: hsl(71, 73%, 54%);
+$light-gray: hsl(204, 43%, 93%);
+$grayish-blue: hsl(218, 22%, 67%);
+$white: hsl(0, 0%, 100%);
+
+// Type
+$font-family-primary: 'Karla', sans-serif;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-size-base: 16px;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    font-weight: $font-weight-bold;
+}
+
+body {
+    font-family: $font-family-primary;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-base;
+    line-height: 1.75rem;
+    color: $grayish-blue;
+
+    background: $light-gray;
+
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+}
+
+.text-link {
+    color: $grayish-blue;
+    transition: color 0.3s ease;
+    &:hover { color: $cyan; }
+}
+
+.text--lg {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.text--md {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.text--cyan { color: $cyan; }
+.text--yellow { color: $bright-yellow; }
+.text--soft-white { color: transparentize(white, 0.4); }
+
+.price-grid {
+    width: 75%;
+    max-width: 720px;
+    margin: 3rem auto 1rem;
+    border-radius: 6px;
+    overflow: hidden; // clip border-radius of price grid sections
+    box-shadow: 0 8px 20px 4px transparentize($grayish-blue, 0.65);
+}
+
+.price-grid__section {
+    padding: 1.75rem 1.5rem;
+    background: $white;
+    &--cyan {
+        background: $cyan;
+        color: $white;
+    }
+    &--cyan-light {
+        background: $light-cyan;
+        color: $white;
+    }
+    &--top { grid-column: 1 / span 2; }
+}
+
+.feature-list {
+    list-style: none;
+}
+
+.pricing-info {
+    display: flex;
+}
+
+.pricing-info__price {
+    font-size: 2rem;
+    font-weight: $font-weight-bold;
+    color: $white;
+    margin-right: 0.5rem;
+}
+
+.button {
+    display: inline-block;
+    width: 100%;
+
+    background: $bright-yellow;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    box-shadow: 0 8px 16px 4px darken($cyan, 5%);
+    transition: background 0.3s ease;
+
+    text-align:center;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+        background: darken($bright-yellow, 8%);
+    }
+
+    &:active {
+        background: darken($bright-yellow, 12%);
+    }
+}
+
+.footer {
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.75rem;
+    color: $grayish-blue;
+}
+
+@media screen and (min-width: 991px) {
+    .price-grid {
+        display: grid;
+        grid-template-rows: 40% 60%;
+        grid-template-columns: 50% 50%;
+    }
+
+    .price-grid__section {
+        padding: 2.25rem 2rem;
+    }
+}
